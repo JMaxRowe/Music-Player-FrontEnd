@@ -1,5 +1,5 @@
 import { useAudioPlayerContext } from "react-use-audio-player";
-import { usePlayer } from "../../contexts/somethingElse";
+import { usePlayer } from "../../contexts/PlayerContext";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 import { useNavigate } from "react-router";
