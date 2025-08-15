@@ -4,7 +4,7 @@ import { UserContext } from "../../../contexts/UserContext";
 import "./Homepage.css";
 import "../playlists/ExplorePlaylists/ExplorePlaylists.css";
 import { homePage } from "../../../services/homepage";
-import PlaylistTile from "../../Playlist-tile/Playlist-tile";
+import PlaylistTile from "../../PlaylistTile/PlaylistTile";
 
 // Page components
 import ErrorPage from "../ErrorPage/ErrorPage";

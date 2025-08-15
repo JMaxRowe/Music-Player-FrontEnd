@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./Profile.css";
-import PlaylistTile from "../../Playlist-tile/Playlist-tile";
+import PlaylistTile from "../../PlaylistTile/PlaylistTile";
 
 // * Services
 import { bookmarkedPlaylistsShow } from "../../../services/profiles";
