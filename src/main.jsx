@@ -5,10 +5,10 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 import { UserProvider } from "./contexts/UserContext.jsx";
 import { AudioPlayerProvider } from "react-use-audio-player";
-import { PlayerProvider } from "./contexts/playerContext.jsx";
+import { PlayerProvider } from "./contexts/PlayerContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+
     <BrowserRouter>
       <UserProvider>
         <AudioPlayerProvider>
@@ -18,5 +18,5 @@ createRoot(document.getElementById("root")).render(
         </AudioPlayerProvider>
       </UserProvider>
     </BrowserRouter>
-  </StrictMode>
+
 );

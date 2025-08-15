@@ -2,19 +2,19 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router";
 
-import Homepage from "./components/Views/Homepage/Homepage.jsx";
+import Homepage from "./components/pages/Homepage/Homepage.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import SignUpPage from "./components/Views/User/Sign-up/Sign-up-page.jsx";
-import SignInPage from "./components/Views/User/Sign-in/Sign-in.jsx";
-import CreatePlaylist from "./components/Views/Playlists/Create-playlist/Create-playlist.jsx";
-import ExplorePlaylists from "./components/Views/Playlists/Explore-playlists/Explore-playlists.jsx";
-import Profile from "./components/Views/Profiles/Profile.jsx";
-import LikedSongs from "./components/Views/Profiles/Liked-songs.jsx";
-import CreatedPlaylists from "./components/Views/Profiles/Created-playlists.jsx";
-import BookmarkedPlaylists from "./components/Views/Profiles/Bookmarked-playlists.jsx";
-import Songs from "./components/Views/Songs/Songs.jsx";
-import ShowPlaylist from "./components/Views/Playlists/Show-playlist/Show-playlist.jsx";
-import EditPlaylist from "./components/Views/Playlists/Edit-playlist/Edit-playlist.jsx";
+import SignUpPage from "./components/pages/User/Sign-up/Sign-up-page.jsx";
+import SignInPage from "./components/pages/User/Sign-in/Sign-in.jsx";
+import CreatePlaylist from "./components/pages/Playlists/Create-playlist/Create-playlist.jsx";
+import ExplorePlaylists from "./components/pages/Playlists/Explore-playlists/Explore-playlists.jsx";
+import Profile from "./components/pages/profiles/Profile.jsx";
+import LikedSongs from "./components/pages/profiles/Liked-songs.jsx";
+import CreatedPlaylists from "./components/pages/profiles/CreatedPlaylists.jsx";
+import BookmarkedPlaylists from "./components/pages/profiles/Bookmarked-playlists.jsx";
+import Songs from "./components/pages/Songs/Songs.jsx";
+import ShowPlaylist from "./components/pages/Playlists/Show-playlist/Show-playlist.jsx";
+import EditPlaylist from "./components/pages/Playlists/Edit-playlist/Edit-playlist.jsx";
 import Player from "./components/Player/Player.jsx";
 
 function App() {
