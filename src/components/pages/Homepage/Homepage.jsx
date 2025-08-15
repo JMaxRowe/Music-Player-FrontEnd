@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router";
 import { UserContext } from "../../../contexts/UserContext";
 import "./Homepage.css";
-import "../playlists/ExplorePlaylists/Explore-playlists.css";
+import "../playlists/ExplorePlaylists/ExplorePlaylists.css";
 import { homePage } from "../../../services/homepage";
 import PlaylistTile from "../../Playlist-tile/Playlist-tile";
 
