@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { profileShow } from "../../../services/profiles";
 import "./Profile.css";
-import "../playlists/explore-playlists/explore-playlists.css";
+import "../playlists/ExplorePlaylists/explore-playlists.css";
 import { UserContext } from "../../../contexts/UserContext";
 import { useContext } from "react";
 

@@ -7,14 +7,14 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import SignUpPage from "./components/pages/user/Sign-Up/Sign-Up.jsx";
 import SignInPage from "./components/pages/user/Sign-In/Sign-In.jsx";
 import CreatePlaylist from "./components/pages/playlists/CreatePlaylist/CreatePlaylsit.jsx";
-import ExplorePlaylists from "./components/pages/Playlists/Explore-playlists/Explore-playlists.jsx";
+import ExplorePlaylists from "./components/pages/playlists/ExplorePlaylists/ExplorePlaylists.jsx";
 import Profile from "./components/pages/profiles/Profile.jsx";
 import LikedSongs from "./components/pages/profiles/Liked-songs.jsx";
 import CreatedPlaylists from "./components/pages/profiles/CreatedPlaylists.jsx";
 import BookmarkedPlaylists from "./components/pages/profiles/Bookmarked-playlists.jsx";
 import Songs from "./components/pages/Songs/Songs.jsx";
-import ShowPlaylist from "./components/pages/Playlists/Show-playlist/Show-playlist.jsx";
-import EditPlaylist from "./components/pages/Playlists/Edit-playlist/Edit-playlist.jsx";
+import ShowPlaylist from "./components/pages/playlists/ShowPlaylist/ShowPlaylist.jsx";
+import EditPlaylist from "./components/pages/playlists/EditPlaylist/EditPlaylist.jsx";
 import Player from "./components/Player/Player.jsx";
 
 function App() {
