@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router";
 
 import Homepage from "./components/pages/Homepage/Homepage.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import SignUpPage from "./components/pages/user/something/something.jsx";
+import SignUpPage from "./components/pages/user/Sign-Up/Sign-Up.jsx";
 import SignInPage from "./components/pages/User/Sign-in/Sign-in.jsx";
 import CreatePlaylist from "./components/pages/Playlists/Create-playlist/Create-playlist.jsx";
 import ExplorePlaylists from "./components/pages/Playlists/Explore-playlists/Explore-playlists.jsx";
