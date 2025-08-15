@@ -1,4 +1,4 @@
-import "./Edit-playlist.css";
+import "./EditPlaylist.css";
 import { useEffect, useState, useContext } from "react";
 import { useParams, useNavigate } from "react-router";
 import { getPlaylist } from "../../../../services/playlists";

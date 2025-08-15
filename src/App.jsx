@@ -6,7 +6,7 @@ import Homepage from "./components/pages/Homepage/Homepage.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import SignUpPage from "./components/pages/user/Sign-Up/Sign-Up.jsx";
 import SignInPage from "./components/pages/user/Sign-In/Sign-In.jsx";
-import CreatePlaylist from "./components/pages/playlists/CreatePlaylist/CreatePlaylsit.jsx";
+import CreatePlaylist from "./components/pages/playlists/CreatePlaylist/CreatePlaylist.jsx";
 import ExplorePlaylists from "./components/pages/playlists/ExplorePlaylists/ExplorePlaylists.jsx";
 import Profile from "./components/pages/profiles/Profile.jsx";
 import LikedSongs from "./components/pages/profiles/Liked-songs.jsx";
