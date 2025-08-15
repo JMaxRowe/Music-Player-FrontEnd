@@ -9,7 +9,7 @@ import SignInPage from "./components/pages/user/Sign-In/Sign-In.jsx";
 import CreatePlaylist from "./components/pages/playlists/CreatePlaylist/CreatePlaylist.jsx";
 import ExplorePlaylists from "./components/pages/playlists/ExplorePlaylists/ExplorePlaylists.jsx";
 import Profile from "./components/pages/profiles/Profile.jsx";
-import LikedSongs from "./components/pages/profiles/Liked-songs.jsx";
+import LikedSongs from "./components/pages/profiles/LikedSongs.jsx";
 import CreatedPlaylists from "./components/pages/profiles/CreatedPlaylists.jsx";
 import BookmarkedPlaylists from "./components/pages/profiles/Bookmarked-playlists.jsx";
 import Songs from "./components/pages/Songs/Songs.jsx";
