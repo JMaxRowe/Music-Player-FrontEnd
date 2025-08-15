@@ -15,7 +15,7 @@ import BookmarkedPlaylists from "./components/pages/profiles/BookmarkedPlaylists
 import Songs from "./components/pages/Songs/Songs.jsx";
 import ShowPlaylist from "./components/pages/playlists/ShowPlaylist/ShowPlaylist.jsx";
 import EditPlaylist from "./components/pages/playlists/EditPlaylist/EditPlaylist.jsx";
-import Player from "./components/something/something.jsx";
+import Player from "./components/Player/Player.jsx";
 
 function App() {
   return (
