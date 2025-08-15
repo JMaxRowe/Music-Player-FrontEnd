@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import "../Navbar/Navbar.css";
+import "./Navbar.css";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 import { useNavigate } from "react-router";

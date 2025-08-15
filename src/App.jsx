@@ -3,7 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router";
 
 import Homepage from "./components/pages/Homepage/Homepage.jsx";
-import Navbar from "./components/Navbar/Navbar.jsx";
+import Navbar from "./components/something/something.jsx";
 import SignUpPage from "./components/pages/User/Sign-up/Sign-up-page.jsx";
 import SignInPage from "./components/pages/User/Sign-in/Sign-in.jsx";
 import CreatePlaylist from "./components/pages/Playlists/Create-playlist/Create-playlist.jsx";
