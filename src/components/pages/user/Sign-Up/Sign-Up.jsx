@@ -1,5 +1,5 @@
 import './Sign-up-page.css'
-import SignUpForm from "../../../Sign-up-form/Sign-up-form.jsx"
+import SignUpForm from "../../../SignUpForm/SignUpForm.jsx"
 import { useContext } from 'react'
 import { UserContext } from '../../../../contexts/UserContext.jsx'
 import { Navigate } from 'react-router'
