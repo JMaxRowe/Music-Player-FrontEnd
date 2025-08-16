@@ -8,7 +8,7 @@ import { UserContext } from "../../../../contexts/UserContext";
 import LoadingPage from "../../LoadingPage/LoadingPage";
 import ErrorPage from "../../ErrorPage/ErrorPage";
 import SongItem from "../../songs/SongItem";
-import AddToPlaylistModal from "../../Songs/AddToPlaylistModal";
+import AddToPlaylistModal from "../../songs/AddToPlaylistModal";
 import { CiCirclePlus } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
 import BookmarkButton from "../../../BookmarkButton/BookmarkButton";
