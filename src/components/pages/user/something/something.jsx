@@ -1,5 +1,5 @@
 import './Sign-in.css'
-import SignInForm from "../../../SignInForm/SignInForm.jsx"
+import SignInForm from "../../../SignInForm/Sign-in-form.jsx"
 import { useContext } from 'react'
 import { UserContext } from '../../../../contexts/UserContext.jsx'
 import { Navigate } from 'react-router'
