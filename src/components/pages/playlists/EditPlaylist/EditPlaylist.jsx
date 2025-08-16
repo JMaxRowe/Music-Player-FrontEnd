@@ -5,7 +5,7 @@ import { getPlaylist } from "../../../../services/playlists";
 import ErrorPage from "../../ErrorPage/ErrorPage";
 import LoadingPage from "../../LoadingPage/LoadingPage"
 import { UserContext } from "../../../../contexts/UserContext";
-import EditPlaylistForm from "../../../Edit-playlist-form/Edit-playlist-form";
+import EditPlaylistForm from "../../../EditPlaylistForm/EditPlaylistForm";
 
 const editPlaylist = () => {
   const { playlistId } = useParams();
