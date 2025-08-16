@@ -7,7 +7,7 @@ import { UserContext } from "../../../../contexts/UserContext";
 // Page components
 import LoadingPage from "../../LoadingPage/LoadingPage";
 import ErrorPage from "../../ErrorPage/ErrorPage";
-import SongItem from "../../Songs/SongItem";
+import SongItem from "../../songs/SongItem";
 import AddToPlaylistModal from "../../Songs/AddToPlaylistModal";
 import { CiCirclePlus } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
