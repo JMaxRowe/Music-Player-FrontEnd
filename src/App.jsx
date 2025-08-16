@@ -12,7 +12,7 @@ import Profile from "./components/pages/profiles/Profile.jsx";
 import LikedSongs from "./components/pages/profiles/LikedSongs.jsx";
 import CreatedPlaylists from "./components/pages/profiles/CreatedPlaylists.jsx";
 import BookmarkedPlaylists from "./components/pages/profiles/BookmarkedPlaylists.jsx";
-import Songs from "./components/pages/Songs/Songs.jsx";
+import Songs from "./components/pages/songs/something.jsx";
 import ShowPlaylist from "./components/pages/playlists/ShowPlaylist/ShowPlaylist.jsx";
 import EditPlaylist from "./components/pages/playlists/EditPlaylist/EditPlaylist.jsx";
 import Player from "./components/Player/Player.jsx";
