@@ -7,7 +7,7 @@ import "./Profile.css";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import { useParams } from "react-router";
 import LoadingPage from "../LoadingPage/LoadingPage";
-import SongItem from "../Songs/SongItem";
+import SongItem from "../songs/SongItem";
 import AddToPlaylistModal from "../Songs/AddToPlaylistModal";
 import { addSongToPlaylist } from "../../../services/songs";
 import { createdPlaylistsShow } from "../../../services/profiles";
