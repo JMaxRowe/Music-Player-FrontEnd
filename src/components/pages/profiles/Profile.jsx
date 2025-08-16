@@ -10,7 +10,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import { Link, useParams } from "react-router";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import SongItem from "../songs/SongItem";
-import AddToPlaylistModal from "../Songs/AddToPlaylistModal";
+import AddToPlaylistModal from "../songs/AddToPlaylistModal";
 import { addSongToPlaylist } from "../../../services/songs";
 import { createdPlaylistsShow } from "../../../services/profiles";
 import PlaylistTile from "../../PlaylistTile/PlaylistTile";
