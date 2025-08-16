@@ -9,7 +9,7 @@ import PlaylistTile from "../../PlaylistTile/PlaylistTile";
 // Page components
 import ErrorPage from "../ErrorPage/ErrorPage";
 import LoadingPage from "../LoadingPage/LoadingPage";
-import SongItem from "../Songs/SongItem";
+import SongItem from "../songs/SongItem";
 import AddToPlaylistModal from "../Songs/AddToPlaylistModal";
 import { addSongToPlaylist } from "../../../services/songs";
 import { createdPlaylistsShow } from "../../../services/profiles";
