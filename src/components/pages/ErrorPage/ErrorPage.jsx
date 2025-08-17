@@ -5,6 +5,8 @@ export default function ErrorPage({error}) {
     return(
         <main className="error-page">
             <h1>An Error Occurred :(</h1>
+            {console.log(error)}
+            <p>Error: {error}</p>
             <Link to='/'>Back to Home</Link>
         </main>
     )
