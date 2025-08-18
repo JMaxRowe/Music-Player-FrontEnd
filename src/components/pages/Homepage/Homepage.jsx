@@ -5,6 +5,7 @@ import "./Homepage.css";
 import "../playlists/ExplorePlaylists/ExplorePlaylists.css";
 import { homePage } from "../../../services/homepage";
 import PlaylistTile from "../../PlaylistTile/PlaylistTile";
+import { GiMusicSpell } from "react-icons/gi";
 
 // Page components
 import ErrorPage from "../ErrorPage/ErrorPage";
@@ -72,7 +73,7 @@ export default function Homepage() {
 
   return (
     <>
-      <h1>Music Player Homepage</h1>
+      <h1>Amplify <GiMusicSpell /></h1>
       <h2>Check out our top playlists:</h2>
       <div className="playlists-grid">
         {topPlaylists.length > 0 ? (

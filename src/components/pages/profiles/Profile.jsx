@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { profileShow } from "../../../services/profiles";
 import "./Profile.css";
-import "../playlists/ExplorePlaylists/ExplorePlaylists.css";
+import "../Playlists/ExplorePlaylists/ExplorePlaylists.css";
 import { UserContext } from "../../../contexts/UserContext";
 import { useContext } from "react";
-
 // Page components
 import ErrorPage from "../ErrorPage/ErrorPage";
 import { Link, useParams } from "react-router";
@@ -14,7 +13,6 @@ import AddToPlaylistModal from "../songs/AddToPlaylistModal";
 import { addSongToPlaylist } from "../../../services/songs";
 import { createdPlaylistsShow } from "../../../services/profiles";
 import PlaylistTile from "../../PlaylistTile/PlaylistTile";
-
 export default function Profile() {
   const { userId } = useParams();
   const { user } = useContext(UserContext);
@@ -27,7 +25,6 @@ export default function Profile() {
   const [selectedSong, setSelectedSong] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
   useEffect(() => {
     const getProfileData = async () => {
       setIsLoading(true);
@@ -45,7 +42,6 @@ export default function Profile() {
     };
     getProfileData();
   }, [userId]);
-
   // Fetch current login user's playlists
   useEffect(() => {
     const getCreatedPlaylistsData = async () => {
@@ -58,17 +54,14 @@ export default function Profile() {
     };
     getCreatedPlaylistsData();
   }, [user]);
-
   // Open modal and set the song to add
   function handleOpenModal(song) {
     setSelectedSong(song);
     setModalShow(true);
   }
-
   if (error) return <ErrorPage error={error} />;
   if (isLoading) return <LoadingPage />;
   if (!profileUser) return <LoadingPage />;
-
   return (
     <div className="profile-container">
       <div className="profile-header">
@@ -120,40 +113,38 @@ export default function Profile() {
           )}
         </div>
       </div>
-
       <div className="section">
         <div className="section-title">
           <Link
             to={`/user/${profileUser._id}/liked-songs`}
           >{`${profileUser.username}'s liked songs`}</Link>
         </div>
-
-        {likedSongs.length > 0 ? (
-          likedSongs.map((song, index) => {
-            return (
-              <SongItem
-                key={song._id}
-                song={song}
-                songs={likedSongs}
-                index={index}
-                user={user}
-                handleOpenModal={handleOpenModal}
-              />
-            );
-          })
-        ) : (
-          <p>There are currently no songs to display</p>
+          {likedSongs.length > 0 ? (
+            likedSongs.map((song, index) => {
+              return (
+                <SongItem
+                  key={song._id}
+                  song={song}
+                  songs={likedSongs}
+                  index={index}
+                  user={user}
+                  handleOpenModal={handleOpenModal}
+                />
+              );
+            })
+          ) : (
+            <p>There are currently no songs to display</p>
+          )}
+        </div>
+        {selectedSong && (
+          <AddToPlaylistModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+            song={selectedSong}
+            playlists={createdPlaylists}
+            onAdd={addSongToPlaylist}
+          />
         )}
       </div>
-      {selectedSong && (
-        <AddToPlaylistModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-          song={selectedSong}
-          playlists={createdPlaylists}
-          onAdd={addSongToPlaylist}
-        />
-      )}
-    </div>
   );
 }

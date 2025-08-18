@@ -15,7 +15,6 @@ import { createdPlaylistsShow } from "../../../services/profiles";
 export default function LikedSongs() {
   const { userId } = useParams();
   const { user } = useContext(UserContext);
-
   // * State
   const [profileUser, setProfileUser] = useState(null);
   const [likedSongs, setLikedSongs] = useState([]);
@@ -24,7 +23,6 @@ export default function LikedSongs() {
   const [playlists, setPlaylists] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
   useEffect(() => {
     const getLikedSongsData = async () => {
       setIsLoading(true);
@@ -34,7 +32,6 @@ export default function LikedSongs() {
         setLikedSongs(data.likedSongs);
       } catch (error) {
         console.log(error);
-        
         setError(error);
       } finally {
         setIsLoading(false);
@@ -42,7 +39,6 @@ export default function LikedSongs() {
     };
     getLikedSongsData();
   }, [userId]);
-
   // Fetch current login user's playlists
   useEffect(() => {
     const getCreatedPlaylistsData = async () => {
@@ -51,30 +47,31 @@ export default function LikedSongs() {
         setPlaylists(data.createdPlaylists);
       } catch (error) {
         console.log(error);
-        
         setError(error);
       }
     };
     getCreatedPlaylistsData();
   }, []);
-
   // Open modal and set the song to add
   function handleOpenModal(song) {
     setSelectedSong(song);
     setModalShow(true);
   }
-
   if (error) return <ErrorPage error={error} />;
   if (isLoading) return <LoadingPage />;
   if (!profileUser) return <LoadingPage />;
-
   return (
     <div className="profile-container">
       <div className="profile-header">
+        <img
+          src={profileUser.profileImage}
+          alt={`${profileUser.username}'s avatar`}
+          className="profile-avatar"
+        />
         <h1>{profileUser.username}'s liked songs</h1>
         <hr />
       </div>
-      <div>
+      <div className="subsection">
         {likedSongs.length > 0 ? (
           likedSongs.map((likedSong, index) => {
             return (
