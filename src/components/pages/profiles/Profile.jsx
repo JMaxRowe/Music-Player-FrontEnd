@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { profileShow } from "../../../services/profiles";
 import "./Profile.css";
-import "../Playlists/ExplorePlaylists/ExplorePlaylists.css";
+import "../playlists/ExplorePlaylists/ExplorePlaylists.css";
 import { UserContext } from "../../../contexts/UserContext";
 import { useContext } from "react";
 // Page components
